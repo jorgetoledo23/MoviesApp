@@ -10,9 +10,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.moviesapp.R;
 import com.example.moviesapp.data.local.MovieEntity;
@@ -77,6 +81,8 @@ public class MovieFragment extends Fragment {
             loadMovies();
 
         }
+
+        //Toast.makeText(getActivity(), "asd",Toast.LENGTH_SHORT).show();
         return view;
     }
 
@@ -89,4 +95,5 @@ public class MovieFragment extends Fragment {
             }
         });
     }
+
 }
